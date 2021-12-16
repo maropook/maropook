@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="maropook">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="image/maro.jpg">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/popup-style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="script/index.js" defer></script>
+
+  <title>maropook</title>
+  <style>
+    .follow-me {
+      list-style: none;
+      margin: 0 0 -8px;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .follow-me li {
+      float: left;
+      margin: 0 8px 8px 0;
+      padding: 0;
+    }
+
+    .follow-me li a::before {
+      background-color: #eee;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      color: #333;
+      display: inline-block;
+      font-family: FontAwesome;
+      font-size: 16px;
+      height: 44px;
+      /* Button height */
+      line-height: 44px;
+      /* Button height */
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+      text-align: center;
+      width: 44px;
+      /* Button width */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="/">MAROPOOK</a>
+    </h1>
+    <nav class="header-links">
+      <ul>
+        <li><a href="#aboutPage">ABOUT</a></li>
+        <li><a href="#awardsPage">AWARDS</a></li>
+        <li><a href="#skillPage">SKILL</a></li>
+        <li><a href="#productsPage">PORDUCTS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main">
+    <div class="pages">
+      <section class="page" id="aboutPage">
+        <h1>ABOUT</h1>
+        <dl class="page-dl">
+          <dt>Name</dt>
+          <dd>maropook (まろぽーく)</dd>
+        </dl>
+        <dl class="page-dl">
+          <dt>Twitter</dt>
+          <dd><a href="https://twitter.com/maropook" target=" _blank">@maropook</a></dd>
+        </dl>
+        <dl class="page-dl">
+          <dt>GitHub</dt>
+          <dd><a href="https://github.com/maropook" target="_blank">@maropook</a></dd>
+        </dl>
+        <dl class="page-dl">
+          <dt>Qiita</dt>
+          <dd><a href="https://qiita.com/maropook" target="_blank">@maropook</a></dd>
+        </dl>
+      </section>
+
+      <section class="page" id="productsPage">
+        <h1>PORDUCTS</h1>
+        <ul class="page-ul products">
+          <li id="おしゃべる">
+            <h2>おしゃべる ～推しがあなたを支えーる！～</h2>
+            <p>自由な声と喋れるスマートスピーカーの追加コンテンツ</p>
+            <p>DCON2021にて発表</p>
+          </li>
+
+          <li id="シマエーる">
+            <h2>シマエーる</h2>
+            <p>学生向けコミュニケーションロボット</p>
+            <p>高専プロコン2020にて発表</p>
+          </li>
+          </dl>
+      </section>
+
+      <section class="page" id="skillPage">
+        <h1>SKILL</h1>
+        <ul class="page-ul">
+          <li>C</li>
+          <li>C++</li>
+          <li>Swift</li>
+          <li>PHP</li>
+          <li>JavaScript
+            <ul class="page-ul">
+              <li>jQuery</li>
+              <li>Vue.js</li>
+            </ul>
+          </li>
+          <li>Python
+            <ul class="page-ul">
+              <li>Django</li>
+            </ul>
+          </li>
+          <li>Ruby
+            <ul class="page-ul">
+              <li>Ruby on rails</li>
+            </ul>
+          </li>
+          <li>Dart
+            <ul class="page-ul">
+              <li>flutter</li>
+            </ul>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="page" id="awardsPage">
+        <h1>AWARDS</h1>
+        <dl class="page-dl">
+          <dt>2021M-BIP</dt>
+          <dd>優秀賞</dd>
+        </dl>
+        <dl class="page-dl">
+          <dt>DCON2021</dt>
+          <dd>7位</dd>
+        </dl>
+        <dl class="page-dl">
+          <dt>HIT2020</dt>
+          <dd>ICTまちづくり賞</dd>
+        </dl>
+        <dl class="page-dl">
+          <dt>高専プロコン2020</dt>
+          <dd>
+            <dl class="page-dl-full">
+              <dt>自由部門</dt>
+              <dd>特別賞</dd>
+            </dl>
+            <dl class="page-dl-full">
+              <dt>パテント審査部門</dt>
+              <dd>奨励賞</dd>
+            </dl>
+          </dd>
+        </dl>
+      </section>
+
+
+    </div>
+
+    <!-- popups -->
+    <div>
+      <div class="popup" button-id="おしゃべる">
+        <div class="popup-inner">
+          <h2>おしゃべる</h2>
+          <p>自由な声と喋れるスマートスピーカーの追加コンテンツ</p>
+          <p>仕様書やスライド作成を担当</p>
+          <p>DCON2021にて発表</p>
+          <p>APIサーバ : Node.js</p>
+          <p>合成音声作成 : Python, Tacotron2</p>
+          <p><a href="https://github.com/ishikawa-nct-iken/oshaberu_clova" target=" _blank">
+              https://github.com/ishikawa-nct-iken/oshaberu_clova
+            </a></p>
+          <div class="movie-wrap">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WpIWauBwZSs?start=2050"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <img src="image/oshaberu/表紙.png">
+          <img src="image/oshaberu/システム構成.png">
+          <img src="image/oshaberu/音声合成-1.png">
+          <img src="image/oshaberu/音声合成-2.png">
+        </div>
+        <div class="popup-bg"></div>
+      </div>
+
+
+      <div class="popup" button-id="シマエーる">
+        <div class="popup-inner">
+          <h2>シマエーる</h2>
+          <p>学生向けコミュニケーションロボット</p>
+          <p>高専プロコン2020にて発表</p>
+          <p>仕様書やスライド作成を担当</p>
+          <p>本体 : Google AIY Voice Kit</p>
+          <p>プログラム : Python</p>
+          <p>音声認識 : Google Assistant API</p>
+          <p><a href="https://github.com/ishikawa-nct-iken/shimayell_aiy" target=" _blank">
+              https://github.com/ishikawa-nct-iken/shimayell_aiy
+            </a></p>
+          <div class="movie-wrap">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kGZ-tcQfXwM?start=3600" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        <div class="popup-bg"></div>
+      </div>
+
+
+    </div>
+  </div>
+</body>
+
+</html>
