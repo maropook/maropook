@@ -1,0 +1,179 @@
+/*
+カスタムHTML  */
+
+/* <div align = "center">
+<div class="follow-me"><li><a href="https://twitter.com/maropook"></a></li><li><a href="https://github.com/maropook"></a></li>
+	<li><a href="https://www.youtube.com/channel/UCv5sSxuv5NDtnfFatieE7yw/videos
+"></a></li>
+	<li><a href="https://www.instagram.com/i.maropook/
+"></a></li>
+	</div>
+</div> */
+
+
+
+/* 追加CSS */
+
+.follow-me {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 0 -8px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.follow-me li {
+    float: left;
+    margin: 0 8px 8px 0;
+    padding: 0;
+}
+
+.follow-me li a::before {
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 16px;
+    height: 42px;
+    /* Button height */
+    line-height: 42px;
+    /* Button height */
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    text-align: center;
+    width: 42px;
+    /* Button width */
+}
+
+.follow-me li a[href*="amazon.co.jp"]::before,
+.follow-me li a[href*="amazon.com"]::before {
+    border-color: #ff9900;
+    color: #ff9900;
+    content: "\f270";
+}
+
+
+
+.follow-me li a[href*="facebook.com"]::before {
+    border-color: #3b5998;
+    color: #3b5998;
+    content: "\f09a";
+}
+
+.follow-me li a[href*="feedly.com"]::before {
+    border-color: #6cc655;
+    color: #6cc655;
+    content: "\f09e";
+}
+
+
+
+.follow-me li a[href*="github.com"]::before {
+    border-color: #181717;
+    color: #181717;
+    content: "\f09b";
+}
+
+
+
+.follow-me li a[href*="instagram.com"]::before {
+    border-color: #125688;
+    color: #125688;
+    content: "\f16d";
+}
+
+
+
+
+.follow-me li a[href*="skype.com"]::before,
+.follow-me li a[href*="skype:"]::before {
+    border-color: #00aff0;
+    color: #00aff0;
+    content: "\f17e";
+}
+
+
+
+
+.follow-me li a[href*="twitter.com"]::before {
+    border-color: #55acee;
+    color: #55acee;
+    content: "\f099";
+}
+
+
+.follow-me li a[href*="wordpress.com"]::before,
+.follow-me li a[href*="wordpress.org"]::before {
+    border-color: #21759b;
+    color: #21759b;
+    content: "\f19a";
+}
+
+.follow-me li a[href*="youtube.com"]::before {
+    border-color: #cd201f;
+    color: #cd201f;
+    content: "\f16a";
+}
+
+.follow-me li a[href$="/feed"]::before {
+    border-color: #ffa500;
+    color: #ffa500;
+    content: "\f09e";
+}
+
+.follow-me li a[href$="/subscribe"]::before {
+    border-color: #363636;
+    color: #363636;
+    content: "\f000";
+    font-family: blogicon;
+}
+
+.follow-me li a:hover::before {
+    color: #fff;
+}
+
+.follow-me li a[href*="amazon.co.jp"]:hover::before,
+.follow-me li a[href*="amazon.com"]:hover::before {
+    background-color: #ff9900;
+}
+
+
+
+.follow-me li a[href*="facebook.com"]:hover::before {
+    background-color: #3b5998;
+}
+
+.follow-me li a[href*="feedly.com"]:hover::before {
+    background-color: #6cc655;
+}
+
+
+.follow-me li a[href*="instagram.com"]:hover::before {
+    background-color: #125688;
+}
+
+.follow-me li a[href*="twitter.com"]:hover::before {
+    background-color: #55acee;
+}
+
+.follow-me li a[href*="wordpress.com"]:hover::before,
+.follow-me li a[href*="wordpress.org"]:hover::before {
+    background-color: #21759b;
+}
+
+.follow-me li a[href*="youtube.com"]:hover::before {
+    background-color: #cd201f;
+}
+
+.follow-me li a[href$="/feed"]:hover::before {
+    background-color: #ffa500;
+}
+
+.follow-me li a[href$="/subscribe"]:hover::before {
+    background-color: #363636;
+}
